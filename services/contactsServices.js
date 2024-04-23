@@ -25,7 +25,7 @@ export async function removeContact(contactId) {
         return null;
     }
     const [result] = contacts.splice(index, 1);
-    await fs.writeFile(contactsPath, JSON.stringify(data, null, 2));
+    await fs.writeFile(contactsPath, JSON.stringify(contacts, null, 2));
 
     return result
 }
