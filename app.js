@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 
 import contactsRouter from "./routes/contactsRouter.js";
 
-import { DB_HOST } from "./config.js";
+// import { DB_HOST } from "./config.js";
 
 const app = express();
 
@@ -25,7 +25,7 @@ app.use((err, req, res, next) => {
 });
 
 
-mongoose.connect(DB_HOST)
+mongoose.connect(process.env.DB_HOST)
   .then(() => {
   app.listen(3000, () => {
   console.log("Database connection successful");
