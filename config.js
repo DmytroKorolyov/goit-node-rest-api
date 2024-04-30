@@ -1,0 +1,1 @@
+export const DB_HOST = "mongodb+srv://Dmytro:zsWkq7KnYVZdWx0I@cluster0.jltvw2j.mongodb.net/my-contacts?retryWrites=true&w=majority&appName=Cluster0"
